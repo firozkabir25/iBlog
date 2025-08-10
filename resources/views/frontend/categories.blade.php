@@ -1,5 +1,27 @@
 @extends('layout.app')
 @section('content')
+
+<!-- Page Header with Search -->
+    <section class="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-2">Web Development</h2>
+                    <p class="text-lg">Latest articles about web technologies, frameworks, and best practices</p>
+                </div>
+                
+                <div class="w-full md:w-auto">
+                    <div class="relative">
+                        <input type="text" placeholder="Search in Web Development..." 
+                               class="w-full md:w-64 lg:w-96 px-4 py-3 rounded-md text-gray-800 pr-10">
+                        <button class="absolute right-3 top-3 text-gray-500 hover:text-blue-600">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
     <!-- Breadcrumbs -->
     <div class="container mx-auto px-4 py-4">
