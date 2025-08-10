@@ -13,3 +13,4 @@ Route::get('single-blog/{id}', [HomeController::class, 'show'])->name('single-bl
 Route::get('category/web-development', [HomeController::class, 'categories'])->name('category.web-development');
 Route::get('login', [AuthController::class, 'index'])->name('login');
 Route::get('registration', [AuthController::class, 'create'])->name('registration');
+Route::get('profile/{id}', [AuthController::class, 'show'])->name('profile');

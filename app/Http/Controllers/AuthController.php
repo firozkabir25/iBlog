@@ -35,7 +35,7 @@ class AuthController extends Controller
      */
     public function show(string $id)
     {
-        //
+        return view('frontend.auth.profile');
     }
 
     /**
